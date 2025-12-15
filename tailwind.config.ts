@@ -58,8 +58,8 @@ export default {
         navy: {
           light: "hsl(var(--navy-light))",
         },
-        green: {
-          glow: "hsl(var(--green-glow))",
+        orange: {
+          glow: "hsl(var(--orange-glow))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
