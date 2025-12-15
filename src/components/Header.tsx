@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Cog, Bot } from "lucide-react";
-
+import MonLogoImage from "../assets/logo amakina.png";
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -32,17 +32,13 @@ const Header = () => {
     >
       <div className="container-custom">
         <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <a href="#accueil" className="flex items-center gap-2 group">
-            <div className="relative w-10 h-10 bg-accent rounded-lg flex items-center justify-center shadow-accent group-hover:scale-105 transition-transform">
-              <Bot className="w-6 h-6 text-accent-foreground" />
-            </div>
-            <span className={`text-xl font-bold tracking-tight transition-colors ${
-              isScrolled ? "text-foreground" : "text-primary-foreground"
-            }`}>
-              RoboTech<span className="text-accent">Pro</span>
-            </span>
-          </a>
+        {/* Remplacement par l'image de votre logo */}
+          <img
+              src={MonLogoImage} 
+              alt="Logo de Mon Entreprise"
+              // Les classes Tailwind pour dimensionner votre logo
+              className="h-10 w-auto group-hover:scale-105 transition-transform" 
+          />
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
